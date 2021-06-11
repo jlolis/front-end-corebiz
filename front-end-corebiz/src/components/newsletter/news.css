@@ -9,10 +9,24 @@
     justify-content: space-around;
 }
 
+.email-confirmation-text{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.email-confirmation-sub-text{
+    text-align: center;
+    color: gray;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
 .news h2{
-    margin-top: 8px;
     margin-bottom: 0;
-    font-size: 1.2em;
+    font-size: 24px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: 700;
 }
 
 .form-news input{
@@ -37,6 +51,7 @@
         justify-content: center;
         align-items: center;
     }
+    
     .news h2{
         text-align: center;
         margin: 0;

@@ -1,6 +1,8 @@
 import React, { Component }  from 'react'
 import Cookies from 'universal-cookie';
 
+import api from '../../services/api'
+
 import './card.css'
 
 import OneStar from '../../img/rate-1-star.png'
@@ -9,10 +11,7 @@ import ThreeStar from '../../img/rate-3-star.png'
 import FourStar from '../../img/rate-4-star.png'
 import FiveStar from '../../img/rate-5-star.png'
 
-import api from '../../services/api'
-
 const cookies = new Cookies();
-
 
 class Card extends Component {
     
@@ -50,7 +49,7 @@ class Card extends Component {
                     {products.map(product => (
                         
                             <div className="card">
-                                <img src={product.imageUrl} width="150px" height="150px" />
+                                <img src={product.imageUrl} width="132px" height="122px" />
                                 <h4 className="product-name">{product.productName}</h4>
                                 <div className="rating-section">
                                     {product.stars == 1 && <img src={OneStar} width="63px" height="10px" /> }
@@ -63,15 +62,15 @@ class Card extends Component {
                                 {
                                     product.listPrice != null && 
                                     <>
-                                    <p className="preco-old">de R$ {String(parseFloat(product.listPrice / 100).toFixed(2))} </p>
-                                    <div className="ofert-flag"><p>OFF</p></div>
+                                        <p className="preco-old">de R$ {String(parseFloat(product.listPrice / 100).toFixed(2))} </p>
+                                        <div className="ofert-flag"><p>OFF</p></div>
                                     </>
                                 }
                                 {
                                     product.listPrice == null && <p className="mascara-preco-old"> 0 </p>
                                 }
                                 
-                                <h3>por R$ {String(parseFloat(product.price / 100).toFixed(2))}</h3>
+                                <h3 className="final-price">por R$ {String(parseFloat(product.price / 100).toFixed(2))}</h3>
 
                                 <button onClick={this.clickBuy}>COMPRAR</button>
                             </div>

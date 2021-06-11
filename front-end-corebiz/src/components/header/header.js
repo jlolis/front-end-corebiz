@@ -1,5 +1,4 @@
 import React, { Component }  from 'react'
-import ReactDOM from 'react-dom';
 import Cookies from 'universal-cookie';
 
 import './header.css'

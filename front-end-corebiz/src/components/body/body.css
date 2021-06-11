@@ -9,24 +9,31 @@
     background: url('../../img/banner-desk.png') #000 no-repeat ;
     background-position-x: right;
     background-size: 47vw 100%;
-    padding-top: 50px ;
-    padding-right: 10% ;
-    padding-left: 10%;
+    padding-top: 50px;
     padding-bottom: 10px;
+    display: none;
+}
+
+.banner-wave{
     display: none;
 }
 
 .banner-content-desktop{
     max-width: 590px;
+    margin-left: 18%;
+    z-index: 1;
 }
 
 .banner-content-desktop h3{
-    font-size: 28px;
-    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 300;
+    z-index: 1;
 }
 
 .banner-content-desktop h2{
-    font-size: 36px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 1;
 }
 
 .banner-content-mobile{
@@ -40,6 +47,7 @@
 
 .slider{
     margin: 10px calc((100% - 48px)/2);
+    z-index: 1;
 }
 
 @media (min-width: 1024px){
@@ -52,7 +60,35 @@
         flex-flow: column;
     }
 
+    .banner-wave{
+        display: inline-block;
+        position: absolute;
+        transform: rotate(90deg);
+        height: 55px;
+        align-self: center;
+        margin-left: 57px;
+        margin-top: 48px;
+    }
+
     .slider{
         margin-top: 50px;
+    }
+}
+
+@media (min-width: 1440px){
+    .banner-wave{
+        margin-left: 4.5%;
+    }
+}
+
+@media (min-width: 1840px){
+    .banner-wave{
+        margin-left: 4%;
+    }
+}
+
+@media (min-width: 2800px){
+    .banner-wave{
+        margin-left: 3.7%;
     }
 }

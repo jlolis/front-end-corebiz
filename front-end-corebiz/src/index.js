@@ -8,6 +8,7 @@ import Body from './components/body/body'
 
 ReactDom.render(
     <div className="main">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
         <Header></Header>
         <Body></Body>
     </div>,
