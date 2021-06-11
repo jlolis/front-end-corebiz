@@ -1,6 +1,8 @@
 # Foi utilizado o framework react.js para desenvolver o site.
  
-# Para rodar o projeto é necessário ter o Node.js e o npm instalado.
+# Para rodar o projeto é necessário ter o Node.js, npm e as dependências instaladas.
+
+# Segue o tutorial para linux.
  
 # Para instalar o node e o npm no Ubuntu rode a seguinte sequência de códigos no seu terminal:
     sudo apt update
